@@ -1,0 +1,179 @@
+body{
+    background-color: rgba(0, 0, 0, 0.096);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+    min-height: 90vh;
+    background: linear-gradient(110deg,rgba(0, 0, 0, 0.397),#38246070,#603824,#4b60243f,black);
+    animation-name: mycontain;
+    animation-timing-function: linear;
+    animation-duration: 5s; 
+    animation-delay: 1s; 
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+}
+@keyframes mycontain{
+    0%{    background: linear-gradient(110deg,rgba(0, 0, 0, 0.397),#38246070,#603824,#4b60243f,black);    }
+    25%{    background: linear-gradient(120deg,rgba(0, 0, 0, 0.397),#38246070,#603824,#4b60243f,black);    }
+    50%{    background: linear-gradient(130deg,rgba(0, 0, 0, 0.397),#38246070,#603824,#4b60243f,black);    }
+    75%{    background: linear-gradient(140deg,rgba(0, 0, 0, 0.397),#38246070,#603824,#4b60243f,black);    }
+    95%{    background: linear-gradient(150deg,rgba(0, 0, 0, 0.397),#38246070,#603824,#4b60243f,black);    }
+    100%{    background: linear-gradient(110deg,rgba(0, 0, 0, 0.397),#38246070,#603824,#4b60243f,black);    }
+
+}
+
+.success,.error{
+    padding: 2px;
+    background: linear-gradient(90deg,rgb(0, 0, 0),#382460e3,#603824,#4b6024e3,black);
+    width: 80%;
+    margin:1px auto;
+    
+}
+.success{
+    color: rgb(6, 240, 6);
+}
+.error{
+    color: rgb(252, 5, 5);
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1vh;
+    margin-top: 2vh;
+}
+
+
+.heading{
+    height:10vh;
+    grid-column: 1/4;
+    grid-row:1 ;
+    text-align: center;
+    background: linear-gradient(130deg,#382460a2,rgba(0, 0, 255, 0.699),#38246027);
+}
+.heading h3{
+    font-size: 35px;
+    margin-top: -1px;
+}
+.logo{
+    color: white;
+    animation-name: mylogo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+@keyframes mylogo{
+    0%{opacity: 0;color: white;}
+    50%{opacity: 0.5;color: brown;}
+    80%{opacity: 0.8;color: red;}
+    100%{opacity: 1;color:white;}
+}
+
+
+.form{
+    position: relative;
+    height: 15vh;
+    grid-column: 1/4;
+    grid-row:2 ;
+    background: linear-gradient(60deg,#60382467,#603824,#603824f1,#6038243b);
+}
+
+.input-field{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 5px;
+    row-gap: 2vh;
+}
+.form-control{
+    padding: 10px;
+    border-bottom: blue 2px solid;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+
+}
+
+.input-field label{
+    text-align: right;
+    margin-top: 2vh;
+    margin-right: 2vh;
+    color: white;
+}
+
+.btn{
+    padding: 8px;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+.btn-blue{
+    background:linear-gradient(145deg, rgba(21, 21, 182, 0.808),rgba(0, 0, 0, 0.603),rgba(21, 21, 182, 0.801),rgba(21, 21, 182, 0.178));
+}
+
+.btn-black{
+    margin-left: 2vh;
+    margin-bottom: 1vh;
+    background:linear-gradient(63deg, rgb(17, 17, 17),black,rgba(0, 0, 0, 0.185));
+}
+
+.result{
+    position: relative;
+    bottom:vh;
+    grid-column: 1/4;
+    grid-row:3 ;
+    background: linear-gradient(68deg,#4b6024ad,#4b6024,#4b60245e);
+}
+
+.collection{
+    padding: 0;
+    margin: 5vh 2vh 2vh 2vh;
+}
+.collection-item{
+    list-style: none;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 0.5vh;
+    padding-left:1vh;
+    text-transform: capitalize;
+    text-shadow: 1px -1px 1px black,-1px -1px 1px white;
+    grid-auto-rows: minmax(5vh,auto);
+    background: linear-gradient(70deg,rgba(0, 0, 0, 0.658),#382460bd,#603824,#4b6024,black);
+
+}
+.collection-item >div{
+    position: relative;
+    margin-top: 1vh;
+}
+
+.collection-item a{
+    color:rgb(207, 7, 7);
+    text-decoration: none;
+    font-size: small;
+    text-shadow: -1px 1px 1px white,-2px 2px 1px black;
+}
+.collection-item a:active{
+    font-size: medium;
+}
+
+@media(min-width:700px){
+    
+}
